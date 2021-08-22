@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoviDetectives</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+    
+     <!-- Add LaTeX via KaTeX from Khan Academy -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             renderMathInElement(document.body, {
+                 // ...options...
+             });
+         });
+     </script>
+  </head>  
+  
+   
+  <body class="size-1140">
+    <!-- HEADER -->
+    <header role="banner">    
+      <!-- Top Bar -->
+      <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+              <p class="text-size-12">¿Tienes dudas sobre el proyecto? Mándanos un mensaje usando el formato de hasta abajo. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="img/logo-free.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="index.html">Introducción</a></li>
+              <li><a href="casos.html">COVID-19</a></li>
+              <li><a href="mates.html">Modelo Matemático</a></li>
+              <li><a href="visual.html">Comorbilidad</a></li>
+              <li><a href="res.html">Resultados y Conclusiones</a></li>
+              <li><a href="cred.html">Referencias</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+        <header class="section background-primary text-center">
+            <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Resultados y Conclusiones</h1>
+        </header>
+        <div class="section background-white"> 
+          <div class="line">
+            <div class="section background-white"> 
+          <div class="line">
+            <h2 class="text-size-30">Pruebas de consistencia de modelo</h2>
+            En estas pruebas usando código, se escribió la matriz de transición de entradas variable en Markov y se simuló una población preliminar, basado en datos
+            estimados de la población mexicana. Esta prueba de consistencia sirvió para asegurar que el modelo producía curvas similares al modelo alemán que se modificó. Los resultados son positivos, 
+            a juzgar por el comportamiento de la curva de contagios, cuya distribución es idéntica a la esperada. <b>La función escrita sirve para aplicarse en los algoritmos de regresión no lineal.</b>
+         <!----------GALERIA --------->   
+     
+            
+            <div class="section background-white"> 
+          <div class="line">
+            <div class="margin">
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>1. Aquí se importaron las librerías necesarias para el modelado. Teniendo nuestra matriz de transición de estados, un estado inicial, la fórmula para calcular las probabilidades de cada transición. Con todo lo anterior, podemos aplicar Markov para predecir a futuro los cambios en la población.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/cod1.png" alt="" title="Portfolio Image 1" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>2.Aquí se muestra como pasa el tiempo y como va variando la población, tanto en número de contagios como muertes, recuperados y personas que no se infectaron. </p>  
+                    </div> 
+                  </div> 
+                  <img src="img/cod2.png" alt="" title="Portfolio Image 2" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>3.Curva alemana.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Curvaalemana.jpeg" alt="" title="Portfolio Image 3" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>4. Nuestra curva.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Curvanues.jpeg" alt="" title="Portfolio Image 4" />
+                </div>	
+              </div>
+          </div> 
+            <br><br></br></br>
+           <h2 class="text-size-30">Obtención de probalidades</h2>
+            En esta sección se tomaron los datos del gobierno acerca de los casos confirmados y las defunciones por estado de la Republica Mexicana. Los datos se separaron para obtener el número de caso confirmados y defunciones cada quince días,
+            esto se hizo para ver como avanza la probabilidad de contagio y muerte a traves del tiempo en cada entidad federativa.
+            </div>
+        <div class="section background-white"> 
+          <div class="line">
+            <div class="margin">
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>1. Se importaron las librerías necesarias.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Codp1.png" alt="" title="Portfolio Image 1" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>2. Aquí se separan los datos intervalos de quince días para los casos confirmados. </p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Codp2.png" alt="" title="Portfolio Image 2" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>3. Se separan los datos en intervalos de quince días para las muertes.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Codp3.png" alt="" title="Portfolio Image 3" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>4. Conversión de listas a dataframes.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Codp4.png" alt="" title="Portfolio Image 4" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-5">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>5. Aquí se generan los promedios de casos confirmados y muertes para cada estado.</p>  
+                    </div> 
+                  </div> 
+                  <img src="img/Codp5.png" alt="" title="Portfolio Image 5" />
+                </div>	
+              </div>
+            </div> 
+            
+           <br><br></br></br> 
+<article>
+    <header class="section background-primary text-center">
+        <h1 class="text-white margin-bottom-10 text-size-50 text-thin text-line-height-1">Algunas conclusiones, reflexiones y lo que queda por recorrer</h1>
+    </header>
+    <div class="section background-white"> 
+      <div class="line">
+        <div class="margin text-center">
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">De lo que más orgullosos estamos es del logro técnico que fue usar un modelo matemático mucho más complicado que el propuesto en Clubes de Ciencia. Las características no lineales hacen de este un modelo mucho más realista, del calibre de los presentados en journals.</p>
+            </div>
+          </div>
+          
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">A pesar de no disponer de muchas semanas para trabajar, logramos estar a nada de completar la calibración de 3-tuplas para las 32 entidades federativas. Hemos aprendido mucho en el proceso.</p>
+            </div>
+          </div>
+        
+
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">El modelo fue rotundamente exitoso en predecir probabilidades $$\pi_{34}$$ constantes a lo largo de la pandemia. Esto lo comprobamos manualmente usando decenas de líneas de código, obteniendo promedios de porcentajes en el tiempo.</p>
+            </div>
+          </div>
+
+
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">Llevamos a cabo geolocalización exitosa de los estados con mayores índices de comorbilidades. Esto permite que, además del estudio cuantitativo, cualitativamente uno se dé cuenta de la relación.</p>
+            </div>
+          </div>
+
+
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">Las limitaciones del modelo también fueron analizadas. Es importante que, a juzgar por las gráficas de la sección "COVID", $$\frac{\partial \pi_{12}}{\partial \nu{j}}\neq 0$$. Sin embargo, esto es reflejo del índice de positividad en México... no de obesidad, diabetes e hipertensión. Nuestras afirmaciones son confirmadas por los estudios citados.</p>
+            </div>
+          </div>
+
+
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">Existe, sin embargo una pregunta abierta intrigante. A pesar de que las comorbilidades en números netos se correlacionan muy bien con las tasas netas de muerte, la comparación más correcta de entidades es entre tasas relativas. Aquí, el caso de México sorprende por su irregularidad, motivando estudios más allá para responder por qué.</p>
+            </div>
+          </div>
+
+
+          <div class="s-12 m-12 l-4 margin-bottom">
+            <div class="padding-2x block-bordered border-radius">
+              <p class="margin-bottom-30">Fuimos un equipo increíblemente colaborativo, que aportó de todo para crear algo muy arriba de nuestras expectativas. Estamos orgullosos.</p>
+            </div>
+          </div>
+
+
+          
+        </div>
+      </div>
+
+    </div> 
+
+    <h2 class="text-size-30">¡MUCHAS GRACIAS!</h2>
+        
+  </article>
+    </main>
+    
+<!-- FOOTER -->
+    <footer>
+      <!-- Social -->
+      <div class="background-primary padding text-center">
+        <a href="https://www.github.com/ricardoskewes/CoviDetectives"><i class="icon-sli-social-github icon2x text-white"></i></a>                                                                         
+      </div>
+      
+      <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Quiénes somos</h4>
+              <p class="text-size-20"><em>Somos un equipo constituido para el CdeCMX Challenge, edición 2020</em><p>
+                            
+              <div class="line">
+                <h4 class="text-uppercase text-strong margin-top-30">¿Cómo puedo contribuir?</h4>
+                <div class="margin">
+                  <div class="s-12 m-12 l-4 margin-m-bottom">
+                    <a class="image-hover-zoom" href="/"><img src="img/CdeCMx.png" alt=""></a>
+                  </div>
+                  <div class="s-12 m-12 l-8 margin-m-bottom">
+                    <p>En la pestaña de conclusiones podrás hallar nuevas incógnitas por resolver. ¡Así es la ciencia en acción!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Contáctanos</h4>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> rskeweszorrilla@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> israel_amtz@yahoo.com.mx</a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> chuggaaconroy888@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> AclDelta@gmail.com</a></p>
+                </div>
+              </div>
+            
+            </div>
+            
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4">
+              <h4 class="text-uppercase text-strong">Dejar un mensaje</h4>
+              <form class="customform text-white">
+                <div class="line">
+                  <div class="margin">
+                    <div class="s-12 m-12 l-6">
+                      <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Tu e-mail" type="text" />
+                    </div>
+                    <div class="s-12 m-12 l-6">
+                      <input name="name" class="name border-radius" placeholder="Tu nombre" title="Tu nombre" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="s-12">
+                  <textarea name="message" class="required message border-radius" placeholder="Tu mensaje" rows="3"></textarea>
+                </div>
+                <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit">¡Enviar!</button></div> 
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark">
+        <div class="line">
+          <div class="s-12 l-6">
+            <p class="text-size-12">Copyright 2020, CoviDetectives</p>
+          </div>
+          <div class="s-12 l-6">
+            <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+          </div>
+        </div>
+      </section>
+    </footer> 
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>   
+   </body>
+</html>
